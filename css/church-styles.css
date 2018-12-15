@@ -3,6 +3,7 @@ body {
 	color: black;
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 /*
  * <hr> lines
@@ -510,4 +511,10 @@ element.style {
 .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+
+footer {
+	position: absolute;
+	width: 100%;
 }
