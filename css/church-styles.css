@@ -1,15 +1,13 @@
 html, body {
 	height: 100%;
 }
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
+}
+main {
 	overflow-x: hidden;
 }
-/*
- * <hr> lines
- */
 hr {
     border: 0;
     height: 1px;
@@ -18,24 +16,9 @@ hr {
     height: 5px;
     margin: 0 0 20px 0;
 }
-#main-page-img {
-	background-image: url("https://images.unsplash.com/photo-1498805983167-a523078d762c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65c2c2fee586564dcd79cb249099d757&auto=format&fit=crop&w=2285&q=80");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 65vh;
-	opacity: 0.9;
-}
-#contact-btn {
-	border: none;
-}
-#contact-btn:hover {
-	border: none;
-	background-color: #fdd007; 
-}
-/*
- * Nav bar
- */
+
+
+/* HEADER */
 .navbar {
 	background-color: #f8f9fa; 
 }
@@ -57,6 +40,44 @@ hr {
 	border: none;
 	border-radius: 0;
 	background-color: #fdd007;
+}
+
+
+/* FOOTER */
+.page-footer {
+	background-color: #fdd007;
+	padding: 1.5rem 0 0.5rem;
+	text-align: center;
+	letter-spacing: 2px;
+	color: black;
+	width: 100%;
+}
+.page-footer i {
+	color: black;
+	letter-spacing: 5px;
+}
+.page-footer i:hover {
+	color: rgb(222, 55, 0);
+	transition: 0.4s;
+}
+
+
+
+
+#main-page-img {
+	background-image: url("https://images.unsplash.com/photo-1498805983167-a523078d762c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65c2c2fee586564dcd79cb249099d757&auto=format&fit=crop&w=2285&q=80");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 65vh;
+	opacity: 0.9;
+}
+#contact-btn {
+	border: none;
+}
+#contact-btn:hover {
+	border: none;
+	background-color: #fdd007; 
 }
 .btn-outline-warning {
     border-radius: 0;
@@ -83,7 +104,6 @@ hr {
 #coontact-btn {
 	height: 4rem;
 	width: 15rem;
-	border-radius: 15px;
 	font-size: 1.8rem;
 	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
 	background-color: #0062cc;
@@ -92,22 +112,7 @@ hr {
 #directions-title {
 	text-align: center;
 }
-.page-footer {
-	background-color: #fdd007;
-	padding: 1.5rem 0 0.5rem;
-	text-align: center;
-	letter-spacing: 2px;
-	color: black;
-	width: 100%;
-}
-.page-footer i {
-	color: black;
-	letter-spacing: 5px;
-}
-.page-footer i:hover {
-	color: rgb(222, 55, 0);
-	transition: 0.4s;
-}
+
 .highlight {
 	color: rgb(222, 55, 0);
 }
@@ -116,14 +121,18 @@ hr {
 }
 .card {
 	box-shadow: 5px 5px 25px 0 rgba(37, 58, 75, 0.2);
-	border-radius: .375rem;
 	background: #fff;
     margin-bottom: 2rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.card-text {
+	font-size: 14px;
 }
 .card.card-lg {
 	border-radius: 0;
 	border-color: transparent;
-	padding: 20px;
+    padding: 60px 20px 40px 20px;
 }
 .card-title {
 	margin-bottom: 5px;
@@ -133,6 +142,8 @@ hr {
 	font-size: 0.8rem;
 	padding-top: 0;
 }
+
+/* EVENT CARDS */
 #event-cards .card{
 	margin: 0;
 	box-shadow: none;
@@ -163,8 +174,7 @@ hr {
 	border: 1px solid #f1f1f1;
 	perspective: 1000px; 
 }
-
-/* This container is needed to position the front and back side */
+/* Needed to position the front and back side */
 .flip-card-inner {
 	position: relative;
 	width: 100%;
@@ -173,8 +183,7 @@ hr {
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
 }
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Horizontal flip on hover*/
 .flip-card:hover .flip-card-inner {
 	transform: rotateY(180deg);
 }
@@ -185,12 +194,10 @@ hr {
 	height: 100%;
 	backface-visibility: hidden;
 }
-
 /* Style the front side */
 .flip-card-front {
 	background-color: transparent;
 }
-
 /* Style the back side */
 .flip-card-back {
 	background-color: #f8f9fa;
@@ -202,8 +209,33 @@ hr {
 	color: #b1a9a9;
 }
 
+/* CAROUSEL */
+.carousel-caption {
+    right: 0;
+    left: auto;
+    color: black;
+    bottom: 100px;
+    padding-right: 60px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+.carousel-indicators .active {
+  background-color: #444;
+}
 
-/* Visit us block*/
+
+/* Visit us block on main page*/
 .visit {
     margin: 0 1.5rem 1.5rem 2rem;
     padding-bottom: 10px;
@@ -218,7 +250,12 @@ hr {
 }
 .time {
 	font-style: italic;
+	background: #fdd007;
+    padding: 7px;
+    width: 170px;
+    font-size: 14px;
 }
+
 
 @media screen and (max-width: 768px) {
 	.main-title{
@@ -344,6 +381,17 @@ element.style {
 /*
  * About page
  */
+ #about-mission {
+ 	color: white;
+    background: #252525;
+    margin-bottom: ; 
+}
+#about-mission h2 {
+	margin-bottom: 1.2rem;
+}
+.blockquote-footer {
+    font-style: italic; 
+}
 #about-about p, #about-leadership p {
 	margin: 2rem;
 }
@@ -529,29 +577,4 @@ element.style {
 .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
   left: 0;
   right: 0;
-}
-
-/* Carousel on main page */
-.carousel-caption {
-    right: 0;
-    left: auto;
-    color: black;
-    text-align: left;
-    padding-right: 60px;
-}
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-.carousel-indicators {
-  bottom: -40px;
-}
-.carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70,70,70,.25);
-}
-.carousel-indicators .active {
-  background-color: #444;
 }
