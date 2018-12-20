@@ -60,10 +60,6 @@ hr {
 	color: rgb(222, 55, 0);
 	transition: 0.4s;
 }
-
-
-
-
 #main-page-img {
 	background-image: url("https://images.unsplash.com/photo-1498805983167-a523078d762c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65c2c2fee586564dcd79cb249099d757&auto=format&fit=crop&w=2285&q=80");
 	background-size: cover;
@@ -100,24 +96,6 @@ hr {
 	letter-spacing: 2px;
 	font-size: 35px;
 	padding: 40px 0 40px 0;
-}
-#coontact-btn {
-	height: 4rem;
-	width: 15rem;
-	font-size: 1.8rem;
-	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-	background-color: #0062cc;
-	line-height: 1.6;
-}
-#directions-title {
-	text-align: center;
-}
-
-.highlight {
-	color: rgb(222, 55, 0);
-}
-.jumbotron {
-	margin: 0;
 }
 .card {
 	box-shadow: 5px 5px 25px 0 rgba(37, 58, 75, 0.2);
