@@ -296,11 +296,6 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
 }
-.form-field.required > label::after {
-    content: "*";
-    color: #f00;
-    margin-left: 2px;
-}
 .form-field {
 	padding-bottom: 14px;
 }
