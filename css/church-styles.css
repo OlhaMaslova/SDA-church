@@ -286,6 +286,9 @@ hr {
 /*
  * Contact us page
  */
+#contact-us h2 {
+	font-size: 18px;
+}
 #contact-title.main-title {
 	background-image: url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1bceff439c9fc8f529dd70504a29d8a5&auto=format&fit=crop&w=1051&q=80');
 	padding-bottom: 100px;
@@ -301,47 +304,16 @@ hr {
 .form-field {
 	padding-bottom: 14px;
 }
-@media screen and (max-width: 575px) {
-	.grid {
-		display: none;
-	}
-}
-@media screen and (min-width: 576px) {
-	.grid {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-	}
-}
-.grid > div {
-	display: flex; 
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-}
-.grid > div > div {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+td {
+	padding: 7px;
 }
 .box {
 	background: #f8f9fa;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	margin: 10px;
-	font-size: 35px;
-}
-.box.facebook {
-	color: #3b5998;
-}
-.box.instagram {
-	color: #eedc31;
-}
-.box.youtube {
-	color: #ff0000;
-}
-.box.maps {
-	color: #1ea362;
+	font-size: 20px;
+	text-align: center;
 }
 .box:hover{
 	transition: 0.6s;
@@ -351,7 +323,7 @@ hr {
 	background-color: #3b5998;
 }
 .box.instagram:hover {
-	background-color: #eedc31;
+	background-color: #e1306c;
 }
 .box.youtube:hover {
 	background-color: #ff0000;
@@ -359,11 +331,14 @@ hr {
 .box.maps:hover {
 	background-color: #1ea362;
 }
-@media screen and (max-width: 767px) {
-	#contact-us-social-media {
-		display: none;
+@media screen and (max-width: 575px) {
+	#contact-us-table {
+		width: 100%;
+		margin-left: 40px;
+		padding-top: 10px!important;
 	}
 }
+
 /*
  * Calendar page
  */
@@ -375,8 +350,6 @@ hr {
 	#calendar iframe {
 		width: 93vw;
 	}
-}
-element.style {
 }
 /*
  * About page
