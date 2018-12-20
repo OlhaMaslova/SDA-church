@@ -312,9 +312,7 @@ td {
 	}
 }
 
-/*
- * Calendar page
- */
+/* CALENDAR PAGE */
 #calendar iframe {
 	height: 60vh;
 	width: 70vw;
@@ -324,9 +322,8 @@ td {
 		width: 93vw;
 	}
 }
-/*
- * About page
- */
+
+/* ABOUT PAGE */
  #about-mission {
  	color: white;
     background: #252525;
@@ -363,15 +360,12 @@ td {
     max-width: 100%;
     height: auto;
 }
-/*
- * Groups class page
- */
+
+/*  GROUPS PAGE */
 .img-groups {
 	height: 259px;
 }
-/*
- * Preaching page
- */
+/* PREACHING PAGE */
 .video-container {
 	width: 100%;
 	height: 30vh;
@@ -394,6 +388,29 @@ td {
 }
 
 
+/* GALLERY */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.gallery-img {
+	width: 100%;
+	vertical-align: middle;
+	padding: 10px 5px 10px 5px;
+}
+@media screen and (min-width: 450px) and (max-width: 750px) {
+	.img.column {
+		flex: 50%;
+		padding: 0 4px;
+	}
+}
+@media screen and (min-width: 751px){
+	.img.column {
+		flex: 25%;
+		padding: 0 4px;
+	}
+}
 
 /* 
  * animation
