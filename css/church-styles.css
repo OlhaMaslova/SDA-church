@@ -23,14 +23,14 @@ hr {
 	background-color: #f8f9fa; 
 }
 #brand {
-	font-size: 14px;
+	font-size: 1rem;
 }
 .nav-item {
 	margin: 0 5px 0 5px;
 }
 .navbar a {
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 0.83rem;
 	align-items: center;
 	text-align: center;
 	vertical-align: middle;
@@ -110,7 +110,7 @@ hr {
 .card.card-lg {
 	border-radius: 0;
 	border-color: transparent;
-    padding: 60px 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
 }
 .card-title {
 	margin-bottom: 5px;
@@ -123,9 +123,11 @@ hr {
 
 /* EVENT CARDS */
 #event-cards .card{
-	margin: 0;
+	margin: auto;
 	box-shadow: none;
     border: none;
+    margin-bottom: 5%;
+    max-width: 360px;
 }
 @media screen and (max-width: 575px) {
 	#event-cards .card{
@@ -192,7 +194,6 @@ hr {
     right: 0;
     left: auto;
     color: black;
-    bottom: 100px;
     padding-right: 60px;
 }
 .carousel-control-prev-icon {
@@ -202,7 +203,7 @@ hr {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 .carousel-indicators {
-  bottom: -40px;
+  bottom: -60px;
 }
 .carousel-indicators li {
   background-color: #999;
@@ -211,9 +212,37 @@ hr {
 .carousel-indicators .active {
   background-color: #444;
 }
+@media screen and (max-width: 768px) {
+	.carousel-caption {
+	    bottom: 0;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 930px) {
+	.carousel-caption {
+	    bottom: 15%;
+	}
+}
+@media screen and (min-width: 931px) and (max-width: 1100px) {
+	.carousel-caption {
+	    bottom: 17%;
+	}
+}
+@media screen and (min-width: 1101px) {
+	.carousel-caption {
+	    bottom: 33%;
+	}
+}
 
 
-/* Visit us block on main page*/
+/* VISIT US*/
+#visit-block {
+	margin-top: 12%;
+}
+@media screen and (max-width: 575px) {
+	#visit-block {
+		margin-top: 23%;
+	}
+}
 .visit {
     margin: 0 1.5rem 1.5rem 2rem;
     padding-bottom: 10px;
@@ -324,25 +353,21 @@ td {
 }
 
 /* ABOUT PAGE */
- #about-mission {
+#about-mission {
  	color: white;
     background: #252525;
     margin-bottom: ; 
 }
-#about-mission h2 {
-	margin-bottom: 1.2rem;
-}
 .blockquote-footer {
     font-style: italic; 
 }
-#about-about p, #about-leadership p {
-	margin: 2rem;
+.about p{
+	margin: 0 2rem 2rem;
 }
 .img-circle {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	margin-top: 2rem; 
 	margin-bottom: 2rem;
 }
 .name {
