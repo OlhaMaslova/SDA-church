@@ -112,14 +112,6 @@ hr {
 	border-color: transparent;
     padding: 40px 20px 40px 20px;
 }
-.card-title {
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-.card-date {
-	font-size: 0.8rem;
-	padding-top: 0;
-}
 
 /* EVENT CARDS */
 #event-cards .card{
@@ -129,9 +121,22 @@ hr {
     margin-bottom: 5%;
     max-width: 360px;
 }
+.card-title {
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.card-date {
+	font-size: 0.8rem;
+	padding-top: 0;
+}
 @media screen and (max-width: 575px) {
 	#event-cards .card{
 		min-height: 274px;
+	}
+}
+@media screen and (max-width: 865px) {
+	#event-cards {
+    	display: block;
 	}
 }
 @media screen and (min-width: 576px) and (max-width: 865px) {
