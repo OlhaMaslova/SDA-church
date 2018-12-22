@@ -353,7 +353,7 @@ td {
 }
 @media screen and (max-width: 575px) {
 	#calendar iframe {
-		width: 93vw;
+		width: 100vw;
 	}
 }
 
