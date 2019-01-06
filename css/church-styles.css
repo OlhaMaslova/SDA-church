@@ -74,13 +74,13 @@ hr {
 	background-color: #fdd007; 
 }
 .btn-outline-warning {
-    border-radius: 0;
+	border-radius: 0;
+	border-color: #fdd007;
     background-color: #fdd007;
     color: #343a40;
-    width: 170px;
     height: 45px;
     line-height: 2;
-    letter-spacing: 1.5px;
+	letter-spacing: 1.5px;
 }
 .main-title {
 	letter-spacing: 3px;
@@ -167,6 +167,11 @@ hr {
 	font-size: 1.1rem;
 	color: #b1a9a9;
 }
+/* PRAYING REQUEST */
+#praying-request form {
+	margin: 1.5rem;
+	max-width: 500px;
+}
 
 /* CAROUSEL */
 .carousel-caption {
@@ -193,9 +198,6 @@ hr {
 }
 
 /* VISIT US*/
-#visit-block {
-	margin-top: 12%;
-}
 .visit {
     margin: 0 1.5rem 1.5rem 2rem;
     padding-bottom: 10px;

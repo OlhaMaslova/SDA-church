@@ -65,7 +65,7 @@
 						<!-- EVENTS -->
 						<section>
 							<h2 id="events" class="text-center title">Events</h2>
-							<div id="event-cards" class="card-deck pb-4">
+							<div id="event-cards" class="card-deck">
 								<div class="card flip-card">
 									<div class="flip-card-inner">
 										<div class="card-body flip-card-front">
@@ -111,23 +111,48 @@
 							</div>
 						</section>
 
-						<!-- CONTACT US -->
-						<div class="jumbotron jumbotron-fluid bg-light">
-							<div class="container text-center">
-								<blockquote class="blockquote">
-									<h2 class="mb-0 dispa">How good and pleasant it is when God’s people live together in unity!</p>
-									<footer class="blockquote-footer">Psalm 133:1</footer>
-								</blockquote>
-								<p class="lead">
-									<a id="contact-btn" class="btn btn-outline-warning hvr-icon-forward href="contact-us/contact-us.html" role="button"> Contact Us
-										<i class="fas fa-arrow-circle-right hvr-icon"></i>
-									</a>
-								</p>
+						<!-- PRAYING REQUEST -->
+						<section id="praying-request">
+							<h2 class="title text-center">Do you have a prayer need?</h2>
+							<div class="row">
+								<div class="col-sm-12 col-md-6 m-auto">
+									<div class="text-center">
+										<blockquote class="blockquote">
+											<h5 class="m-4 mb-0 dispa">"Therefore, confess your sins to one another and pray for one another, that you may be healed. The prayer of a righteous person has great power as it is working."</h5>
+											<footer class="blockquote-footer">James 5:16</footer>
+										</blockquote>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<form>
+										<div class="row">
+											<div class="col-sm-6 col-md-6 mt-2 form-group">
+												<label for="name-field">Name</label>
+												<input id='name-field' type="text" class="form-control" placeholder="Ivan Ivanov" aria-describedby="emailHelp" required>
+											</div>
+											<div class="col-sm-6 col-md-6 mt-2 form-group">
+												<label for="email-field">Email</label>
+												<input id='email-field' type="email" class="form-control" placeholder="email@gmail.com" required>
+											</div>
+										</div>
+										<div class="row mt-3">
+											<div class="col col-sm-12 col-md-12 form-group">
+												<label for="prayer_request">Prayer Need</label>
+												<textarea class="form-control" id="prayer_request" placeholder="Enter your prayer need" rows="3" required></textarea>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-outline-warning">Send Prayer Need</button>
+									</form>
+								</div>
 							</div>
-						</div>
+							
+							
+						</section>
 
+						
+					
 						<!-- PHOTO CAROUSEL -->
-						<section id="photo-block">
+						<section id="photo-block" class="mt-5">
 							<div id="carousel" class="carousel slide" data-ride="carousel">
 								<ol class="carousel-indicators">
 									<li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -162,6 +187,23 @@
 									<span class="carousel-control-next-icon" aria-hidden="true"></span>
 									<span class="sr-only">Next</span>
 								</a>
+							</div>
+						</section>
+
+						<!-- CONTACT US -->
+						<section class="mt-5 pt-5">
+							<div class="jumbotron jumbotron-fluid bg-light">
+								<div class="container text-center">
+									<blockquote class="blockquote">
+										<h2 class="mb-0 dispa">"How good and pleasant it is when God’s people live together in unity!"</h2>
+										<footer class="blockquote-footer">Psalm 133:1</footer>
+									</blockquote>
+									<p class="lead">
+										<a id="contact-btn" class="btn btn-outline-warning hvr-icon-forward href="contact-us/contact-us.html" role="button"> Contact Us
+											<i class="fas fa-arrow-circle-right hvr-icon"></i>
+										</a>
+									</p>
+								</div>
 							</div>
 						</section>
 
