@@ -17,7 +17,6 @@ hr {
     margin: 0 0 20px 0;
 }
 
-
 /* HEADER */
 .navbar {
 	background-color: #f8f9fa; 
@@ -41,7 +40,6 @@ hr {
 	border-radius: 0;
 	background-color: #fdd007;
 }
-
 
 /* FOOTER */
 .page-footer {
@@ -102,13 +100,14 @@ hr {
 	background: #fff;
     margin-bottom: 2rem;
     margin-top: 30px;
-    margin-bottom: 60px;
+	margin-bottom: 60px;
+	border: 1px;
+	border-radius: 0;
 }
 .card-text {
 	font-size: 14px;
 }
 .card.card-lg {
-	border-radius: 0;
 	border-color: transparent;
     padding: 40px 20px 40px 20px;
 }
@@ -117,7 +116,6 @@ hr {
 #event-cards .card{
 	margin: auto;
 	box-shadow: none;
-    border: none;
     margin-bottom: 5%;
     max-width: 360px;
 }
@@ -129,34 +127,9 @@ hr {
 	font-size: 0.8rem;
 	padding-top: 0;
 }
-@media screen and (max-width: 575px) {
-	#event-cards .card{
-		min-height: 274px;
-	}
-}
-@media screen and (max-width: 865px) {
-	#event-cards {
-    	display: block;
-	}
-}
-@media screen and (min-width: 576px) and (max-width: 865px) {
-	.card-title {
-		font-size: 0.9rem;
-	}
-	.card-text {
-		font-size: 0.7rem;
-	}
-	#event-cards .card{
-		min-height: 220px;
-	}
-}
-.card-body.flip-card-front{
-	padding: 0;
-}
 .flip-card {
 	background-color: transparent;
 	height: 240px;
-	border: 1px solid #f1f1f1;
 	perspective: 1000px; 
 }
 /* Needed to position the front and back side */
@@ -181,13 +154,14 @@ hr {
 }
 /* Style the front side */
 .flip-card-front {
-	background-color: transparent;
+	padding: 0;
 }
 /* Style the back side */
 .flip-card-back {
 	background-color: #f8f9fa;
 	color: black;
 	transform: rotateY(180deg);
+	border: 1px solid #f1f1f1;
 }
 .blockquote-footer {
 	font-size: 1.1rem;
@@ -217,36 +191,10 @@ hr {
 .carousel-indicators .active {
   background-color: #444;
 }
-@media screen and (max-width: 768px) {
-	.carousel-caption {
-	    bottom: 0;
-	}
-}
-@media screen and (min-width: 769px) and (max-width: 930px) {
-	.carousel-caption {
-	    bottom: 15%;
-	}
-}
-@media screen and (min-width: 931px) and (max-width: 1100px) {
-	.carousel-caption {
-	    bottom: 17%;
-	}
-}
-@media screen and (min-width: 1101px) {
-	.carousel-caption {
-	    bottom: 33%;
-	}
-}
-
 
 /* VISIT US*/
 #visit-block {
 	margin-top: 12%;
-}
-@media screen and (max-width: 575px) {
-	#visit-block {
-		margin-top: 23%;
-	}
 }
 .visit {
     margin: 0 1.5rem 1.5rem 2rem;
@@ -268,33 +216,6 @@ hr {
     font-size: 14px;
 }
 
-
-@media screen and (max-width: 768px) {
-	.main-title{
-		padding-top: 25%;
-	}
-	.page-footer i {
-		font-size: 1.5rem;
-		color: black;
-	}
-	.page-footer {
-		font-size: 11px;
-		line-height: 0.9rem;
-	}
-}
-
-@media screen and (min-width: 769px) {
-	.main-title {
-		padding-top: 12%;
-	}
-	.page-footer i {
-		font-size: 1rem;
-	}
-	.page-footer {
-		font-size: 11px;
-		line-height: 0.4rem;
-	}
-}
 /*
  * Contact us page
  */
@@ -338,30 +259,23 @@ td {
 .box.maps:hover {
 	background-color: #1ea362;
 }
-@media screen and (max-width: 575px) {
-	#contact-us-table {
-		width: 100%;
-		margin-left: 40px;
-		padding-top: 10px!important;
-	}
-}
 
 /* CALENDAR PAGE */
 #calendar iframe {
 	height: 60vh;
 	width: 70vw;
 }
-@media screen and (max-width: 575px) {
-	#calendar iframe {
-		width: 100vw;
-	}
-}
 
 /* ABOUT PAGE */
 #about-mission {
- 	color: white;
-    background: #252525;
-    margin-bottom: ; 
+	color: white;
+	font-weight: 700;
+    background: url('https://images.unsplash.com/photo-1507961455425-0caef37ef6fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80') center center;
+}
+#mission-components .card {
+	min-width: 250px;
+	padding-bottom: 5%;
+	margin: 0.5rem;
 }
 .blockquote-footer {
     font-style: italic; 
@@ -395,6 +309,7 @@ td {
 .img-groups {
 	height: 259px;
 }
+
 /* PREACHING PAGE */
 .video-container {
 	width: 100%;
@@ -406,17 +321,6 @@ td {
 	height: 70vh;
 	padding-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
-	#carousel-videos {
-		display: none;
-	}
-}
-@media screen and (max-width: 767px) {
-	#video-wrapper {
-		display: none;
-	}
-}
-
 
 /* GALLERY */
 .gallery {
@@ -428,18 +332,6 @@ td {
 	width: 100%;
 	vertical-align: middle;
 	padding: 10px 5px 10px 5px;
-}
-@media screen and (min-width: 450px) and (max-width: 750px) {
-	.img.column {
-		flex: 50%;
-		padding: 0 4px;
-	}
-}
-@media screen and (min-width: 751px){
-	.img.column {
-		flex: 25%;
-		padding: 0 4px;
-	}
 }
 
 /* 
@@ -570,4 +462,113 @@ td {
 .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+/* 
+ * Responsive
+ */
+@media screen and (min-width: 450px) and (max-width: 750px) {
+	.img.column {
+		flex: 50%;
+		padding: 0 4px;
+	}
+}
+@media screen and (max-width: 575px) {
+	#contact-us-table {
+		width: 100%;
+		margin-left: 40px;
+		padding-top: 10px!important;
+	}
+	#calendar iframe {
+		width: 100vw;
+	}
+	#mission-components .card {
+		width: 100%;
+		margin: auto;
+	}
+	#visit-block {
+		margin-top: 23%;
+	}
+	#event-cards .card{
+		min-height: 230px;
+	}
+}
+@media screen and (min-width: 576px) and (max-width: 865px) {
+	.card-title {
+		font-size: 0.9rem;
+	}
+	.card-text {
+		font-size: 0.7rem;
+	}
+	#event-cards .card{
+		min-height: 220px;
+	}
+}
+@media screen and (min-width: 576px) {
+	#mission-components .card {
+		max-width: 10rem;
+	}
+}
+@media screen and (max-width: 767px) {
+	#video-wrapper {
+		display: none;
+	}
+	.main-title{
+		padding-top: 25%;
+	}
+	.page-footer i {
+		font-size: 1.5rem;
+		color: black;
+	}
+	.page-footer {
+		font-size: 11px;
+		line-height: 0.9rem;
+	}
+	.carousel-caption {
+	    bottom: 0;
+	}
+}
+@media screen and (min-width: 768px) {
+	.main-title {
+		padding-top: 12%;
+	}
+	.page-footer i {
+		font-size: 1rem;
+	}
+	.page-footer {
+		font-size: 11px;
+		line-height: 0.4rem;
+	}
+	.img.column {
+		flex: 25%;
+		padding: 0 4px;
+	}
+	#carousel-videos {
+		display: none;
+	}
+	#mission-components .card {
+		min-width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width: 865px) {
+	#event-cards {
+    	display: block;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 930px) {
+	.carousel-caption {
+	    bottom: 15%;
+	}
+}
+@media screen and (min-width: 931px) and (max-width: 1100px) {
+	.carousel-caption {
+	    bottom: 17%;
+	}
+}
+@media screen and (min-width: 1101px) {
+	.carousel-caption {
+	    bottom: 33%;
+	}
 }
