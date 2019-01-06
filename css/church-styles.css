@@ -269,7 +269,7 @@ td {
 /* ABOUT PAGE */
 #about-mission {
 	color: white;
-    background: url('https://images.unsplash.com/photo-1499463217683-ee3c9ce038f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60') center center;
+    background: url('https://images.unsplash.com/photo-1519643598672-d0b07eb496ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80') center bottom;
 }
 #mission-components .card {
 	min-width: 250px;
